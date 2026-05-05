@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>DevOps - A Ponte entre Criar e Rodar</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<style>
+		:root {
+			--blue: #00d4ff;
+			--green: #00ff9d;
+			--orange: #ff9f43;
+			--white: #FFFFFF;
+		}
+
+		.title {
+			font-size: 2.5em;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.highlight {
+			color: var(--blue);
+		}
+
+		.bridge {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 80px;
+			font-size: 1.4em;
+		}
+
+		.arrow {
+			font-size: 2em;
+			color: var(--green);
+		}
+
+		.timeline {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 80px;
+		}
+
+		.step {
+			width: 18%;
+			border: 2px solid var(--white);
+			border-radius: 12px;
+			padding: 20px;
+			font-size: .8em;
+		}
+
+		.pain-container {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 60px;
+		}
+
+		.pain {
+			width: 40%;
+			border: 2px solid var(--orange);
+			border-radius: 15px;
+			padding: 20px;
+		}
+
+		.infinity {
+			font-size: 4em;
+			color: var(--green);
+			margin-top: 40px;
+		}
+
+		.big {
+			font-size: 1.8em;
+		}
+
+		.metric {
+			font-size: 2em;
+			color: var(--green);
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+
+			<!-- Slide 1 -->
+			<section data-transition="zoom">
+				<h1 class="title">DevOps</h1>
+				<h3 class="fragment fade-up">
+					A <span class="highlight">Ponte</span> entre Criar e Rodar
+				</h3>
+				<p class="fragment fade-up">Por que todo programador precisa entender DevOps?</p>
+
+
+				<p class="fragment fade-up">
+					Cultura + Desenvolvimento + Operações
+				</p>
+			</section>
+
+
+			<!-- Slide 2 -->
+		<section> 
+    <section data-transition="slide">
+        <h3>O Que é?</h3>
+        <div class="bridge">
+            <span style="font-size: 0.6em;">
+               			DevOps é uma cultura e um conjunto de práticas que une
+						<b>desenvolvimento (Dev)</b> e <b>operações (Ops)</b> para entregar software com mais rapidez e
+						qualidade. Ele incentiva colaboração entre times, <b>automação</b> de tarefas repetitivas e
+						<b>Padronização</b> de processos, do código até a infraestrutura.
+						Na prática, DevOps busca encurtar o ciclo de entrega por meio de <b>integração e entrega
+							contínuas (CI/CD)</b>, infraestrutura como código, monitoramento e feedback constante,
+						reduzindo falhas e tornando releases mais previsíveis e seguros.
+            </span>
+        </div>
+    </section>
+
+    <section>
+        <div class="bridge">
+            <div class="fragment fade-right">👨‍💻 Desenvolvimento</div>
+            <div class="arrow fragment fade-up">❌</div>
+            <div class="fragment fade-left">🖥 Operações</div>
+        </div>
+    </section>
+</section>
+
+
+			<!-- Slide 3 -->
+			<section data-transition="convex">
+				<h2>Então surge o DevOps</h2>
+
+				<div class="bridge">
+
+					<div class="fragment fade-right">
+						👨‍💻 Criar
+					</div>
+
+					<div class="arrow fragment grow">
+						🌉
+					</div>
+
+					<div class="fragment fade-left">
+						🚀 Rodar
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Slide 4 -->
+			<section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #000428, #004e92)">
+				<h2 style="color: aliceblue;">Os 5 Princípios</h2>
+
+				<div class="timeline" style="color: aliceblue;">
+
+					<div class="step fragment fade-up">
+						🤝<br><br>
+						Colaboração
+					</div>
+
+					<div class="step fragment fade-up">
+						⚙️<br><br>
+						Automação
+					</div>
+
+					<div class="step fragment fade-up">
+						🔄<br><br>
+						CI/CD
+					</div>
+
+					<div class="step fragment fade-up">
+						📊<br><br>
+						<p style="font-size: 0.7em;">Monitoramento</p>
+					</div>
+
+					<div class="step fragment fade-up">
+						🔐<br><br>
+						Segurança
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Slide 5 -->
+		<section>
+			<section data-transition="zoom">
+				<h2>Ferramentas</h2>
+			</section>
+				
+			<section>
+				<h2 >Versionamento</h2>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/Git_icon.svg.png" alt="">
+						git
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/Octicons-mark-github.svg" alt="">
+						GitHub
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/gitlab_logo_icon.webp" alt="">
+						GitLab
+				</div>
+			</section>
+				
+			<section>
+				<h2 >Contêineres e Orquestração</h2>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/docker_original.webp" alt="">
+						Docker
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/podman.png" alt="">
+						podman
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/Kubernetes_logo.png" alt="">
+						Kubernetes
+				</div>
+			</section>
+			<section>
+				<video width="1080" height="720" controls>
+  					<source src="./assets/palestras/videos/kubernets_illustration1.mp4" type="video/mp4" />
+ 
+				</video>
+			</section>
+			<section>
+				<h2 >Infraestrutura como código</h2>
+				<p>(IAC)</p>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/terraform.png" alt="">
+						Terraform
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/ansible.png" alt="">
+						Ansible
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/puppet.webp" alt="">
+						Puppet
+				</div>
+			
+			</section>
+			<section>
+				<h3>Infraestrutura como Código</h3>
+    <p style="font-size: 0.5em;">Exemplo: Criando uma instância na GCP com Terraform</p>
+    
+    <pre><code class="language-hcl" data-trim data-line-numbers="1-5|7-12|14-18" style="background: #2E3440; color: #D8DEE9;" >
+resource "google_compute_instance" "vm_devops" {
+  name         = "devops-machine"
+  machine_type = "f1-micro"
+  zone         = "us-central1-a"
+
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-11"
+    }
+  }
+
+  network_interface {
+    network = "default"
+    access_config {
+      // Inclui IP público
+    }
+  }
+}
+    </code></pre>
+			</section>
+			<section>
+				<h2 >Monitoramento</h2>
+			
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/grafana.webp" alt="">
+						Grafana
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/zabbix_logo.png" alt="">
+						Zabbix
+				</div>
+				<div class="step fragment fade-up" style="display: inline-block;">
+						<img src="./assets/palestras/devops/uptime-kuma.webp" alt="">
+						UptimeKuma
+				</div>
+			</section>
+			<section>
+				<h2 >Colaboração</h2>
+			
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/jira.png" alt="">
+						Jira
+				</div>
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/confluence.webp" alt="">
+						Confluence
+				</div>
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/clickup.png" alt="">
+					ClickUp
+				</div>
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/Octicons-mark-github.svg" alt="">
+					<p style="font-size: 0.7em;">Github Projects</p>
+				</div>
+								<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/Asana-Symbol.png" alt="">
+					Asana
+				</div>
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/Notion-logo.svg.png" alt="">
+					Notion
+				</div>
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/Slack.png" alt="">
+					Slack
+				</div>
+				<div class="step" style="display: inline-block;">
+					<img src="./assets/palestras/devops/Microsoft_Office_Teams.png" alt="">
+					Teams
+				</div>
+				
+						
+						
+			</section>
+			
+				
+		</section>
+
+
+			<!-- Slide 6 -->
+			<section data-transition="slide">
+				<h2>Provedores de Nuvem</h2>
+				<p> (com ênfase na GCP)</p>
+
+				<div class="pain-container">
+
+					<div class="step" style="display: inline-block;">
+						<img src="./assets/palestras/devops/aws_logo.webp" alt="">
+					</div>
+					<div class="step" style="display: inline-block;">
+						<img src="./assets/palestras/devops/gcp.png" alt="">
+					</div>
+					<div class="step" style="display: inline-block;">
+						<img src="./assets/palestras/devops/azure_logo.jpg" alt="">
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Slide 7 -->
+			<section data-transition="zoom">
+				<h2>O ciclo DevOps</h2>
+
+
+				<div class="grow">
+					<img src="./assets/palestras/devops/image (4).png" alt="ciclo_devops">
+				</div>
+
+
+				<div class="infinity fragment rotate-in">
+					∞
+				</div>
+
+				<p class="fragment fade-up">
+					Planejar → Codar → Testar → Entregar → Operar → Monitorar
+				</p>
+			</section>
+
+			<!-- Slide 8-->
+
+
+
+
+			<!-- Slide 9 -->
+			<section data-transition="convex">
+				<h2>Resultados reais</h2>
+
+				<p class="metric fragment">
+					🚀 Deploys mais rápidos
+				</p>
+
+				<p class="metric fragment">
+					🛡 Menos falhas
+				</p>
+
+				<p class="metric fragment">
+					📈 Mais confiança
+				</p>
+			</section>
+
+
+			<!-- Slide Final -->
+			<section data-background-gradient="linear-gradient(to bottom, #000428, #004e92)">
+				<h1 class="title">DevOps</h1>
+
+				<p class="big fragment fade-up">
+					Não é ferramenta.
+				</p>
+
+				<p class="big fragment fade-up">
+					Não é cargo.
+				</p>
+
+				<p class="big fragment fade-up highlight">
+					É cultura.
+				</p>
+
+			</section>
+
+
+		</div>
+	</div>
+
+
+	<script src="dist/reveal.js"></script>
+
+	<script>
+
+		Reveal.initialize({
+
+			hash: true,
+
+			controls: true,
+
+			progress: true,
+
+			center: true,
+
+			transition: 'slide',
+
+			backgroundTransition: 'fade',
+
+			autoAnimate: true
+
+		});
+
+	</script>
+
+</body>
+
+</html>
